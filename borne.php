@@ -47,6 +47,7 @@
 	<li><a href="http://localhost/3annales/journaldenfa016.html">le journal de nfa016, ex3</a></li>
     <li><a href="http://localhost/3annales/borne.php">borne de commande de glace ex4</a></li>
     <li><a href="http://localhost/3annales/practice.html">practice test</a></li>
+    <li><a href="http://localhost/3annales/listjsex5.html">liste js ex5</a></li>
 </ul>
 
 	<h1>ex4</h1>
@@ -55,7 +56,7 @@
     <form action="commande.php" type="get" value="Glaces">
         <p>numero de table<input type="text"></input>
         <p>parfum<br />
-            <select multiple="multiple" id="parfum">
+            <select multiple="multiple" namme="parfum[]" id="parfum">
                 <option value="chocolat">chocolat</option>
                 <option value="fraise">fraise</option>
                 <option value="vanille">vanille</option>
@@ -69,7 +70,7 @@
 </p>
 
 
-<button id="butNbParfum" onclick="nombreParfumChoisis()">viewNbParfum</button>
+<input type="submit" id="butNbParfum" onsubmit="nombreParfumChoisis()" />
 <p id="viewNbParfum" placeholder="nombre de parfum">nombre de parfum</p>
 
 
